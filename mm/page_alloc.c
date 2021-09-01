@@ -322,7 +322,8 @@ compound_page_dtor * const compound_page_dtors[] = {
  */
 int min_free_kbytes = 1024;
 int user_min_free_kbytes = -1;
-int watermark_boost_factor __read_mostly;
+/* Moto huangzq2: Disable watermark boost as it's not working fine on kernel 4.19 */
+int watermark_boost_factor __read_mostly = 0;
 int watermark_scale_factor = 10;
 
 /*
