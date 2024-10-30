@@ -27,7 +27,7 @@ cc_prebuilt_binary {
 kernel_headers_verbose = ""
 
 build = ["gen_headers_arm.bp", "gen_headers_arm64.bp"]
-
+/*
 cc_library_headers {
     name: "qti_kernel_headers",
     arch: {
@@ -42,4 +42,4 @@ cc_library_headers {
     },
     vendor_available: true,
     recovery_available: true,
-}
+} */
